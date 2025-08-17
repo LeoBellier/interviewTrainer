@@ -1,0 +1,19 @@
+<header class="mb-6">
+  <h2 class="text-2xl font-semibold">
+    View by Companies 
+  </h2>
+</header>
+<span></span>
+<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <% (companiesNames || []).forEach(function(company) { %>
+    <li>
+      <a href="/company-view/<%= encodeURIComponent(company) %>" 
+        class="block rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition
+                  hover:shadow-md hover:border-gray-300">
+        <h3 class="text-lg font-medium text-gray-900">
+          <%= company %>
+        </h3>
+      </a>
+    </li>
+    <% }); %>
+</ul>

@@ -1,0 +1,38 @@
+- id: 1
+  title: "Two Sum"
+  shortDescription: "Find two numbers that add up to a specific target."
+  difficulty: "Easy"
+  companies:
+    - "Google"
+    - "Facebook"
+    - "Amazon"
+  fullExplanation: >
+    Given an array of integers, return indices of the two numbers such that
+    they add up to a specific target. You may assume that each input would have
+    exactly one solution, and you may not use the same element twice.
+
+- id: 2
+  title: "Longest Substring Without Repeating Characters"
+  shortDescription: "Find the length of the longest substring without repeating characters."
+  difficulty: "Medium"
+  companies:
+    - "Apple"
+    - "Microsoft"
+    - "Netflix"
+  fullExplanation: >
+    Given a string, find the length of the longest substring without repeating
+    characters. For example, the longest substring for "abcabcbb" is "abc",
+    which the length is 3.
+- id: 3
+  title: "Median of Two Sorted Arrays"
+  shortDescription: "Find the median of two sorted arrays."
+  difficulty: "Hard"
+  companies:
+    - "LinkedIn"
+    - "Uber"
+    - "Airbnb"
+    - "Apple"
+  fullExplanation: >
+    Given two sorted arrays nums1 and nums2 of size m and n respectively, return
+    the median of the two sorted arrays. The overall run time complexity should
+    be O(log (m+n)).
