@@ -1,5 +1,5 @@
-./pyenv.cfg
-./bin/
-./lib/
-./node_modules/
-./include/
+pyvenv.cfg
+bin/
+lib/
+node_modules/
+include/
