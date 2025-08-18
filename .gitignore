@@ -3,3 +3,4 @@ bin/
 lib/
 node_modules/
 include/
+scriptCreator/__pycache__

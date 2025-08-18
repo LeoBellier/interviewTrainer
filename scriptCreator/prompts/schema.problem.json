@@ -1,0 +1,96 @@
+{
+    "type": "object",
+    "properties": {
+        "company": {"type": "string"},
+        "roles": {"type": "array", "items": {"type": "string"}},
+        "locale_support": {"type": "array", "items": {"type": "string"}},
+        "questions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "required": ["id", "title", "difficulty", "topics", "prompt", "sample_io"],
+                "properties": {
+                    "id": {"type": "string"},
+                    "title": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "string"},
+                            "en": {"type": "string"}
+                        },
+                        "required": ["es"],
+                        "additionalProperties": false
+                    },
+                    "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
+                    "topics": {"type": "array", "items": {"type": "string"}},
+                    "tags": {"type": "array", "items": {"type": "string"}},
+                    "source_hint": { 
+                        "type": "string"
+                    },
+                    "prompt": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "string"},
+                            "en": {"type": "string"}
+                        },
+                        "required": ["es"],
+                        "additionalProperties": false
+                    },
+                    "constraints": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "array", "items": {"type": "string"}},
+                            "en": {"type": "array", "items": {"type": "string"}}
+                        },
+                        "additionalProperties": false
+                    },
+                    "hints": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "array", "items": {"type": "string"}},
+                            "en": {"type": "array", "items": {"type": "string"}}
+                        },
+                        "additionalProperties": false
+                    },
+                    "solution_outline": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "array", "items": {"type": "string"}},
+                            "en": {"type": "array", "items": {"type": "string"}}
+                        },
+                        "additionalProperties": false
+                    },
+                    "use_cases": {
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "array", "items": {"type": "string"}},
+                            "en": {"type": "array", "items": {"type": "string"}}
+                        },
+                        "additionalProperties": false
+                    },
+                    "extra_exercises": {  
+                        "type": "object",
+                        "properties": {
+                            "es": {"type": "array", "items": {"type": "string"}},
+                            "en": {"type": "array", "items": {"type": "string"}}
+                        },
+                        "additionalProperties": false
+                    },
+                    "sample_io": {
+                        "type": "object",
+                        "properties": {
+                            "input": {},
+                            "output": {}
+                        },
+                        "required": ["input", "output"],
+                        "additionalProperties": true
+                    },
+                    "references": {"type": "array", "items": {"type": "string"}}
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": ["company", "roles", "locale_support", "questions"],
+    "additionalProperties": false
+}
