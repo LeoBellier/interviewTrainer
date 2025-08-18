@@ -32,26 +32,20 @@ def build_prompt(company: str, roles: list[str], count: int, topics: list[str] |
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
 def generate(company: str, roles: list[str], count: int, topics: list[str] | None):
     user_prompt = build_prompt(company, roles, count, topics)
-    try:
-        response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",  # o el modelo que uses
-        messages=[
-            {"role": "system", "content": SYSTEM_INSTRUCTIONS},
-            {"role": "user", "content": user_prompt},
-        ],
-        response_format={
-                "type": "json_object",
-                
-            },
-        stream=False
-        )
-    except NameError:
-        print(NameError)
-    finally:
-        print;('okay')
+
+    response = client.chat.completions.create(
+    model="llama-3.3-70b-versatile",
+    messages=[
+        {"role": "system", "content": SYSTEM_INSTRUCTIONS},
+        {"role": "user", "content": user_prompt},
+    ],
+    response_format={"type": "json_object"},
+    stream=False
+    )
 
     # Extraer JSON estructurado
     data = response.choices[0].message.content
+    print (data)
     return json.loads(data)
 
 def write_company_yaml(payload: dict, out_dir: str):
