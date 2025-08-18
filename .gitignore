@@ -1,0 +1,5 @@
+./pyenv.cfg
+./bin/
+./lib/
+./node_modules/
+./include/
