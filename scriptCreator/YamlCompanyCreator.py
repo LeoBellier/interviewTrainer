@@ -14,8 +14,6 @@ client =client = Groq(api_key=os.environ.get("groq_api_key"))
 def load_text(path): return pathlib.Path(path).read_text(encoding="utf-8")
 def load_json(path): return json.loads(load_text(path))
 
-
-
 PROBLEMS_SCHEMA = json.loads((files("prompts") / "schema.problem.json").read_text("utf-8"))
 SYSTEM_INSTRUCTIONS = (files("prompts") / "system.es-AR.md").read_text("utf-8")
 USER_TEMPLATE = (files("prompts") / "user_template.es-AR.md").read_text("utf-8")
@@ -42,11 +40,10 @@ def generate(company: str, roles: list[str], count: int, topics: list[str] | Non
     response_format={"type": "json_object"},
     stream=False
     )
-
-    # Extraer JSON estructurado
     data = response.choices[0].message.content
-    print (data)
-    return json.loads(data)
+    jsonData = json.loads(data)
+    result = {'company': company, 'questions': jsonData}
+    return result
 
 def write_company_yaml(payload: dict, out_dir: str):
     company = payload["company"]
@@ -77,7 +74,6 @@ def main():
     args = parser.parse_args()
 
     payload = generate(args.company, args.roles, args.count, args.topics)
-
     out_path = write_company_yaml(payload, args.out)
     print(f"✅ YAML generado: {out_path}")
 

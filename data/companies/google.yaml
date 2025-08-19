@@ -1,0 +1,307 @@
+company: Google
+slug: google
+roles: []
+locale_support:
+- es
+- en
+questions:
+- id: procesamiento-de-datos-en-paralelo
+  company: Google
+  role: Data Engineering
+  title_es: Procesamiento de datos en paralelo utilizando Spark
+  title_en: Parallel Data Processing using Spark
+  description_es: Diseñar un algoritmo que utilice Apache Spark para procesar un conjunto de datos de manera paralela. El conjunto de datos se compone de filas, donde cada fila tiene un ID de usuario, una fecha y una valor numérico.
+  description_en: Design an algorithm that uses Apache Spark to process a dataset in parallel. The dataset consists of rows, where each row has a user ID, a date, and a numeric value.
+  inputs_es:
+    filas_de_datos: Lista de filas, donde cada fila es un objeto con los campos 'id_usuario', 'fecha' y 'valor'
+  inputs_en:
+    rows_of_data: List of rows, where each row is an object with the fields 'user_id', 'date', and 'value'
+  outputs_es:
+    resultado_procesado: Lista de filas procesadas en paralelo
+  outputs_en:
+    processed_result: List of rows processed in parallel
+  difficulty: easy
+  use_cases_es:
+  - Procesamiento de datos de sensores en tiempo real
+  - Análisis de comportamiento de usuarios en una aplicación web
+  - Procesamiento de grandes conjuntos de datos científicos
+  use_cases_en:
+  - Real-time sensor data processing
+  - Web application user behavior analysis
+  - Large scientific dataset processing
+  extra_exercises_es:
+  - Implementar un sistema de caché para mejorar el rendimiento
+  - Agregar soporte para procesamiento de datos en streaming
+  extra_exercises_en:
+  - Implement a caching system to improve performance
+  - Add support for streaming data processing
+- id: diseño-de-api-rest
+  company: Google
+  role: Backend
+  title_es: Diseño de una API REST para un servicio de autenticación
+  title_en: Designing a REST API for an Authentication Service
+  description_es: Diseñar una API REST que permita a los clientes autenticarse y obtener un token de acceso válido para realizar operaciones en un sistema.
+  description_en: Design a REST API that allows clients to authenticate and obtain a valid access token to perform operations in a system.
+  inputs_es:
+    credenciales_de_usuario: Correo electrónico y contraseña del usuario
+  inputs_en:
+    user_credentials: User's email and password
+  outputs_es:
+    token_de_acceso: Token de acceso válido para realizar operaciones en el sistema
+  outputs_en:
+    access_token: Valid access token to perform operations in the system
+  difficulty: medium
+  use_cases_es:
+  - Autenticación de usuarios en una aplicación web
+  - Protección de recursos y datos en un sistema
+  - Integración con servicios de terceros
+  use_cases_en:
+  - Web application user authentication
+  - System resource and data protection
+  - Third-party service integration
+  extra_exercises_es:
+  - Implementar un sistema de autorización basado en roles
+  - Agregar soporte para autenticación de dos factores
+  extra_exercises_en:
+  - Implement a role-based authorization system
+  - Add support for two-factor authentication
+- id: procesamiento-de-ventas
+  company: Google
+  role: Data Engineering
+  title_es: Procesamiento de datos de ventas utilizando Apache Beam
+  title_en: Sales Data Processing using Apache Beam
+  description_es: Diseñar un algoritmo que utilice Apache Beam para procesar un conjunto de datos de ventas. El conjunto de datos se compone de filas, donde cada fila tiene un ID de venta, una fecha, un valor numérico y un ID de producto.
+  description_en: Design an algorithm that uses Apache Beam to process a sales dataset. The dataset consists of rows, where each row has a sale ID, a date, a numeric value, and a product ID.
+  inputs_es:
+    filas_de_ventas: Lista de filas, donde cada fila es un objeto con los campos 'id_venta', 'fecha', 'valor' y 'id_producto'
+  inputs_en:
+    sales_rows: List of rows, where each row is an object with the fields 'sale_id', 'date', 'value', and 'product_id'
+  outputs_es:
+    resumen_de_ventas: Resumen de las ventas procesadas, incluyendo el total de ventas por producto y fecha
+  outputs_en:
+    sales_summary: Summary of the processed sales, including the total sales by product and date
+  difficulty: medium
+  use_cases_es:
+  - Análisis de ventas y tendencias en un negocio
+  - Procesamiento de datos de ventas en tiempo real
+  - Integración con sistemas de gestión de inventario
+  use_cases_en:
+  - Sales and trend analysis in a business
+  - Real-time sales data processing
+  - Integration with inventory management systems
+  extra_exercises_es:
+  - Implementar un sistema de detección de anomalías en las ventas
+  - Agregar soporte para procesamiento de datos de ventas en lotes
+  extra_exercises_en:
+  - Implement an anomaly detection system in sales
+  - Add support for batch sales data processing
+- id: sistema-de-recomendaciones
+  company: Google
+  role: Backend
+  title_es: Diseño de un sistema de recomendaciones utilizando algoritmos de colaboración
+  title_en: Designing a Recommendation System using Collaborative Algorithms
+  description_es: Diseñar un algoritmo que utilice técnicas de colaboración para recomendar productos a los usuarios. El algoritmo debe recibir como entrada una matriz de calificaciones de usuarios y productos.
+  description_en: Design an algorithm that uses collaborative techniques to recommend products to users. The algorithm should take as input a user-product rating matrix.
+  inputs_es:
+    matriz_de_calificaciones: Matriz de calificaciones de usuarios y productos
+  inputs_en:
+    rating_matrix: User-product rating matrix
+  outputs_es:
+    recomendaciones: Lista de recomendaciones de productos para cada usuario
+  outputs_en:
+    recommendations: List of product recommendations for each user
+  difficulty: hard
+  use_cases_es:
+  - Sistemas de recomendación de productos en línea
+  - Sistemas de recomendación de contenido en redes sociales
+  - Sistemas de recomendación de música y videos
+  use_cases_en:
+  - Online product recommendation systems
+  - Social media content recommendation systems
+  - Music and video recommendation systems
+  extra_exercises_es:
+  - Implementar un sistema de recomendación híbrido que combine colaboración y contenido
+  - Agregar soporte para recomendaciones en tiempo real
+  extra_exercises_en:
+  - Implement a hybrid recommendation system that combines collaboration and content
+  - Add support for real-time recommendations
+- id: integracion-de-servicios
+  company: Google
+  role: Backend
+  title_es: Integración de servicios utilizando API REST y Mensajes
+  title_en: Service Integration using REST API and Messages
+  description_es: Diseñar un algoritmo que integre varios servicios utilizando API REST y mensajería. El algoritmo debe recibir como entrada una solicitud de integración y devuelve una respuesta con los resultados de la integración.
+  description_en: Design an algorithm that integrates multiple services using REST API and messaging. The algorithm should take as input an integration request and returns a response with the integration results.
+  inputs_es:
+    solicitud_de_integracion: Solicitud de integración con los servicios
+  inputs_en:
+    integration_request: Integration request with the services
+  outputs_es:
+    resultado_de_integracion: Resultado de la integración de los servicios
+  outputs_en:
+    integration_result: Result of the service integration
+  difficulty: medium
+  use_cases_es:
+  - Integración de servicios en una arquitectura de microservicios
+  - Integración de servicios de terceros
+  - Integración de servicios en un sistema de Internet de las cosas
+  use_cases_en:
+  - Service integration in a microservices architecture
+  - Third-party service integration
+  - Service integration in an Internet of Things system
+  extra_exercises_es:
+  - Implementar un sistema de autenticación y autorización para la integración de servicios
+  - Agregar soporte para la integración de servicios asincrónicos
+  extra_exercises_en:
+  - Implement an authentication and authorization system for service integration
+  - Add support for asynchronous service integration
+- id: procesamiento-de-texto
+  company: Google
+  role: Data Engineering
+  title_es: Procesamiento de texto utilizando técnicas de Procesamiento de Lenguaje Natural
+  title_en: Text Processing using Natural Language Processing Techniques
+  description_es: Diseñar un algoritmo que utilice técnicas de Procesamiento de Lenguaje Natural para procesar un conjunto de textos. El algoritmo debe recibir como entrada un texto y devuelve un resultado procesado.
+  description_en: Design an algorithm that uses Natural Language Processing techniques to process a set of texts. The algorithm should take as input a text and returns a processed result.
+  inputs_es:
+    texto: Texto a procesar
+  inputs_en:
+    text: Text to process
+  outputs_es:
+    resultado_procesado: Resultado del procesamiento del texto
+  outputs_en:
+    processed_result: Result of the text processing
+  difficulty: easy
+  use_cases_es:
+  - Análisis de sentimiento de textos
+  - Clasificación de textos en categorías
+  - Detección de entidades en textos
+  use_cases_en:
+  - Text sentiment analysis
+  - Text classification into categories
+  - Entity detection in texts
+  extra_exercises_es:
+  - Implementar un sistema de clasificación de textos utilizando machine learning
+  - Agregar soporte para el procesamiento de textos en lenguajes diferentes
+  extra_exercises_en:
+  - Implement a text classification system using machine learning
+  - Add support for text processing in different languages
+- id: sistema-de-monitoreo
+  company: Google
+  role: Backend
+  title_es: Diseño de un sistema de monitoreo utilizando API REST y WebSockets
+  title_en: Designing a Monitoring System using REST API and WebSockets
+  description_es: Diseñar un algoritmo que utilice API REST y WebSockets para monitorear un conjunto de servicios. El algoritmo debe recibir como entrada una solicitud de monitoreo y devuelve una respuesta con los resultados del monitoreo.
+  description_en: Design an algorithm that uses REST API and WebSockets to monitor a set of services. The algorithm should take as input a monitoring request and returns a response with the monitoring results.
+  inputs_es:
+    solicitud_de_monitoreo: Solicitud de monitoreo con los servicios
+  inputs_en:
+    monitoring_request: Monitoring request with the services
+  outputs_es:
+    resultado_de_monitoreo: Resultado del monitoreo de los servicios
+  outputs_en:
+    monitoring_result: Result of the service monitoring
+  difficulty: medium
+  use_cases_es:
+  - Monitoreo de servicios en una arquitectura de microservicios
+  - Monitoreo de servicios de terceros
+  - Monitoreo de servicios en un sistema de Internet de las cosas
+  use_cases_en:
+  - Service monitoring in a microservices architecture
+  - Third-party service monitoring
+  - Service monitoring in an Internet of Things system
+  extra_exercises_es:
+  - Implementar un sistema de alertas para monitoreo
+  - Agregar soporte para el monitoreo de servicios asincrónicos
+  extra_exercises_en:
+  - Implement an alert system for monitoring
+  - Add support for asynchronous service monitoring
+- id: optimizacion-de-consultas
+  company: Google
+  role: Data Engineering
+  title_es: Optimización de consultas utilizando técnicas de indexación y particionamiento
+  title_en: Query Optimization using Indexing and Partitioning Techniques
+  description_es: Diseñar un algoritmo que optimice un conjunto de consultas utilizando técnicas de indexación y particionamiento. El algoritmo debe recibir como entrada una consulta y devuelve un plan de ejecución optimizado.
+  description_en: Design an algorithm that optimizes a set of queries using indexing and partitioning techniques. The algorithm should take as input a query and returns an optimized execution plan.
+  inputs_es:
+    consulta: Consulta a optimizar
+  inputs_en:
+    query: Query to optimize
+  outputs_es:
+    plan_de_ejecucion_optimizado: Plan de ejecución optimizado para la consulta
+  outputs_en:
+    optimized_execution_plan: Optimized execution plan for the query
+  difficulty: hard
+  use_cases_es:
+  - Optimización de consultas en bases de datos relacionales
+  - Optimización de consultas en bases de datos NoSQL
+  - Optimización de consultas en sistemas de almacenamiento de datos
+  use_cases_en:
+  - Query optimization in relational databases
+  - Query optimization in NoSQL databases
+  - Query optimization in data storage systems
+  extra_exercises_es:
+  - Implementar un sistema de monitoreo de rendimiento para la optimización de consultas
+  - Agregar soporte para la optimización de consultas en sistemas de procesamiento de datos en paralelo
+  extra_exercises_en:
+  - Implement a performance monitoring system for query optimization
+  - Add support for query optimization in parallel data processing systems
+- id: sistema-de-seguridad
+  company: Google
+  role: Backend
+  title_es: Diseño de un sistema de seguridad utilizando técnicas de autenticación y autorización
+  title_en: Designing a Security System using Authentication and Authorization Techniques
+  description_es: Diseñar un algoritmo que utilice técnicas de autenticación y autorización para proteger un conjunto de servicios. El algoritmo debe recibir como entrada una solicitud de acceso y devuelve una respuesta con los resultados de la autenticación y autorización.
+  description_en: Design an algorithm that uses authentication and authorization techniques to secure a set of services. The algorithm should take as input an access request and returns a response with the authentication and authorization results.
+  inputs_es:
+    solicitud_de_acceso: Solicitud de acceso a los servicios
+  inputs_en:
+    access_request: Access request to the services
+  outputs_es:
+    resultado_de_autenticacion_y_autorizacion: Resultado de la autenticación y autorización
+  outputs_en:
+    authentication_and_authorization_result: Result of the authentication and authorization
+  difficulty: medium
+  use_cases_es:
+  - Protección de servicios en una arquitectura de microservicios
+  - Protección de servicios de terceros
+  - Protección de servicios en un sistema de Internet de las cosas
+  use_cases_en:
+  - Service protection in a microservices architecture
+  - Third-party service protection
+  - Service protection in an Internet of Things system
+  extra_exercises_es:
+  - Implementar un sistema de detección de intrusos
+  - Agregar soporte para la autenticación de dos factores
+  extra_exercises_en:
+  - Implement an intrusion detection system
+  - Add support for two-factor authentication
+- id: procesamiento-de-imagenes
+  company: Google
+  role: Data Engineering
+  title_es: Procesamiento de imágenes utilizando técnicas de visión artificial
+  title_en: Image Processing using Artificial Vision Techniques
+  description_es: Diseñar un algoritmo que utilice técnicas de visión artificial para procesar un conjunto de imágenes. El algoritmo debe recibir como entrada una imagen y devuelve un resultado procesado.
+  description_en: Design an algorithm that uses artificial vision techniques to process a set of images. The algorithm should take as input an image and returns a processed result.
+  inputs_es:
+    imagen: Imagen a procesar
+  inputs_en:
+    image: Image to process
+  outputs_es:
+    resultado_procesado: Resultado del procesamiento de la imagen
+  outputs_en:
+    processed_result: Result of the image processing
+  difficulty: hard
+  use_cases_es:
+  - Detección de objetos en imágenes
+  - Reconocimiento de patrones en imágenes
+  - Clasificación de imágenes en categorías
+  use_cases_en:
+  - Object detection in images
+  - Pattern recognition in images
+  - Image classification into categories
+  extra_exercises_es:
+  - Implementar un sistema de seguimiento de objetos en imágenes
+  - Agregar soporte para el procesamiento de imágenes en tiempo real
+  extra_exercises_en:
+  - Implement an object tracking system in images
+  - Add support for real-time image processing

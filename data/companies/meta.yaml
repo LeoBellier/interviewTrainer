@@ -1,0 +1,251 @@
+company: Meta
+slug: meta
+roles: []
+locale_support:
+- es
+- en
+questions:
+  exercises:
+  - id: validar-sql-queries
+    name_es: Validar consultas SQL
+    name_en: Validate SQL Queries
+    description_es: Implementar un algoritmo que valide la sintaxis de consultas SQL básicas. Se deben soportar sentencias SELECT, INSERT, UPDATE y DELETE.
+    description_en: Implement an algorithm to validate the syntax of basic SQL queries. SELECT, INSERT, UPDATE, and DELETE statements must be supported.
+    difficulty: medium
+    tags:
+    - SQL
+    - Parsing
+    company: Meta
+    role: Backend
+    use_cases_es:
+    - Validar consultas antes de ejecutarlas en la base de datos para prevenir ataques de inyección SQL.
+    - Crear un intérprete de SQL para un sistema embebido.
+    - Generar informes sobre la sintaxis más común en consultas de un sistema de gestión de bases de datos.
+    use_cases_en:
+    - Validate queries before executing them on the database to prevent SQL injection attacks.
+    - Create a SQL interpreter for an embedded system.
+    - Generate reports on the most common syntax in queries from a database management system.
+    extra_exercises_es:
+    - Extender la validez para incluir consultas con joins.
+    - Soportar consultas con subconsultas.
+    extra_exercises_en:
+    - Extend validity to include queries with joins.
+    - Support queries with subqueries.
+  - id: optimizar-busquedas-arbol-binario
+    name_es: Optimizar búsqueda en árbol binario
+    name_en: Optimize Search in Binary Tree
+    description_es: Dado un árbol binario de búsqueda, diseñar un método para optimizar la búsqueda de un valor específico. El árbol puede no estar balanceado.
+    description_en: Given a binary search tree, design a method to optimize the search for a specific value. The tree may not be balanced.
+    difficulty: medium
+    tags:
+    - Árboles Binarios
+    - Búsqueda
+    company: Meta
+    role: Backend
+    use_cases_es:
+    - Mejorar la eficiencia en la recuperación de datos en sistemas de bases de datos.
+    - Crear un índice para una columna en una base de datos relacional.
+    - Optimizar la búsqueda en un conjunto grande de registros.
+    use_cases_en:
+    - Improve efficiency in data retrieval in database systems.
+    - Create an index for a column in a relational database.
+    - Optimize search in a large set of records.
+    extra_exercises_es:
+    - Implementar un algoritmo de autoreorganización para mantener el árbol balanceado.
+    - Comparar eficiencia con otros algoritmos de búsqueda.
+    extra_exercises_en:
+    - Implement a self-reorganizing algorithm to keep the tree balanced.
+    - Compare efficiency with other search algorithms.
+  - id: procesamiento-flujo-datos
+    name_es: Procesamiento de flujo de datos
+    name_en: Data Stream Processing
+    description_es: Crear un sistema capaz de procesar un flujo continuo de datos y realizar cálculos en tiempo real, como sumas y promedios.
+    description_en: Create a system capable of processing a continuous stream of data and performing real-time calculations, such as sums and averages.
+    difficulty: hard
+    tags:
+    - Procesamiento de Flujos
+    - Cálculos en Tiempo Real
+    company: Meta
+    role: Data Engineering
+    use_cases_es:
+    - Análisis de métricas de desempeño en tiempo real para monitorear el rendimiento de un sistema.
+    - Procesamiento de transacciones financieras para detectar posibles fraudes.
+    - Monitoreo del estado de un sistema de IoT para tomar decisiones basadas en datos.
+    use_cases_en:
+    - Real-time performance metric analysis to monitor system performance.
+    - Financial transaction processing to detect potential fraud.
+    - Monitoring the state of an IoT system to make data-driven decisions.
+    extra_exercises_es:
+    - Manejar flujos de datos con diferentes tasas de llegada.
+    - Implementar un sistema de tolerancia a fallas para el procesamiento de flujo de datos.
+    extra_exercises_en:
+    - Handle data streams with different arrival rates.
+    - Implement a fault-tolerant system for stream processing.
+  - id: agrupar-datos
+    name_es: Agrupar datos
+    name_en: Group Data
+    description_es: Dado un conjunto de datos, implementar un algoritmo para agrupar los datos en conjuntos según condiciones específicas.
+    description_en: Given a dataset, implement an algorithm to group the data into sets based on specific conditions.
+    difficulty: easy
+    tags:
+    - Agrupación de Datos
+    company: Meta
+    role: Data Engineering
+    use_cases_es:
+    - Generar informes agrupados por categorías en un sistema de gestión de inventarios.
+    - Clasificar datos de clientes según su ubicación geográfica.
+    - Crear un dashboard para visualizar métricas agrupadas por departamentos en una empresa.
+    use_cases_en:
+    - Generate grouped reports by categories in an inventory management system.
+    - Classify customer data by geographic location.
+    - Create a dashboard to visualize metrics grouped by departments in a company.
+    extra_exercises_es:
+    - Implementar un sistema de agrupación jerárquica.
+    - Soportar condiciones de agrupación dinámicas.
+    extra_exercises_en:
+    - Implement a hierarchical grouping system.
+    - Support dynamic grouping conditions.
+  - id: reducir-dimension
+    name_es: Reducir dimensionalidad
+    name_en: Reduce Dimensionality
+    description_es: Dado un conjunto de datos de alta dimensionalidad, implementar un algoritmo para reducir la dimensionalidad sin perder información significativa.
+    description_en: Given a high-dimensional dataset, implement an algorithm to reduce the dimensionality without losing significant information.
+    difficulty: medium
+    tags:
+    - Reducción de Dimensionalidad
+    company: Meta
+    role: Data Engineering
+    use_cases_es:
+    - Visualizar datos de alta dimensionalidad en un espacio de menor dimensionalidad para la comprensión humana.
+    - Preprocesar datos para algoritmos de aprendizaje automático que no manejen bien la alta dimensionalidad.
+    - Reducir el ruido en los datos y mejorar la precisión de los modelos predictivos.
+    use_cases_en:
+    - Visualize high-dimensional data in a lower-dimensional space for human understanding.
+    - Preprocess data for machine learning algorithms that do not handle high dimensionality well.
+    - Reduce noise in the data and improve the accuracy of predictive models.
+    extra_exercises_es:
+    - Comparar diferentes técnicas de reducción de dimensionalidad.
+    - Implementar una técnica de selección de características para reducir la dimensionalidad.
+    extra_exercises_en:
+    - Compare different dimensionality reduction techniques.
+    - Implement a feature selection technique to reduce dimensionality.
+  - id: encriptar-datos
+    name_es: Encriptar datos
+    name_en: Encrypt Data
+    description_es: Implementar un algoritmo de encriptación para proteger datos sensibles. El algoritmo debe ser seguro y eficiente.
+    description_en: Implement an encryption algorithm to protect sensitive data. The algorithm must be secure and efficient.
+    difficulty: medium
+    tags:
+    - Encriptación
+    company: Meta
+    role: Backend
+    use_cases_es:
+    - Proteger la información de los usuarios en aplicaciones web.
+    - Encriptar datos en tránsito para prevenir la interceptación.
+    - Cumplir con regulaciones de privacidad y seguridad de datos.
+    use_cases_en:
+    - Protect user information in web applications.
+    - Encrypt data in transit to prevent interception.
+    - Comply with data privacy and security regulations.
+    extra_exercises_es:
+    - Implementar un sistema de gestión de claves para el algoritmo de encriptación.
+    - Comparar diferentes algoritmos de encriptación en términos de seguridad y eficiencia.
+    extra_exercises_en:
+    - Implement a key management system for the encryption algorithm.
+    - Compare different encryption algorithms in terms of security and efficiency.
+  - id: balancear-carga
+    name_es: Balancear carga
+    name_en: Load Balancing
+    description_es: Diseñar un algoritmo para distribuir la carga de trabajo de manera equitativa entre varios servidores para maximizar la eficiencia y la disponibilidad.
+    description_en: Design an algorithm to distribute the workload evenly among multiple servers to maximize efficiency and availability.
+    difficulty: hard
+    tags:
+    - Balanceo de Carga
+    company: Meta
+    role: Backend
+    use_cases_es:
+    - Garantizar la disponibilidad de un servicio web bajo cargas pesadas.
+    - Optimizar el uso de recursos en un clúster de servidores.
+    - Reducir el tiempo de respuesta en aplicaciones bajo demanda variable.
+    use_cases_en:
+    - Ensure the availability of a web service under heavy loads.
+    - Optimize resource usage in a server cluster.
+    - Reduce response time in applications under variable demand.
+    extra_exercises_es:
+    - Implementar un algoritmo de balanceo de carga dinámico que se adapte a cambios en la carga.
+    - Considerar la latencia y el ancho de banda en la toma de decisiones de balanceo de carga.
+    extra_exercises_en:
+    - Implement a dynamic load balancing algorithm that adapts to changes in load.
+    - Consider latency and bandwidth in load balancing decision-making.
+  - id: filtrar-datos
+    name_es: Filtrar datos
+    name_en: Filter Data
+    description_es: Crear un algoritmo para filtrar datos según condiciones específicas, como rangos, valores exactos o patrones.
+    description_en: Create an algorithm to filter data based on specific conditions, such as ranges, exact values, or patterns.
+    difficulty: easy
+    tags:
+    - Filtrado de Datos
+    company: Meta
+    role: Data Engineering
+    use_cases_es:
+    - Crear informes personalizados según criterios de filtrado en un sistema de gestión de inventarios.
+    - Filtrar datos de sensores para eliminar ruido y mejorar la precisión.
+    - Generar listas de clientes que cumplan con ciertos criterios demográficos.
+    use_cases_en:
+    - Create customized reports based on filtering criteria in an inventory management system.
+    - Filter sensor data to remove noise and improve accuracy.
+    - Generate lists of customers who meet certain demographic criteria.
+    extra_exercises_es:
+    - Implementar un sistema de filtrado en tiempo real para datos en flujo.
+    - Soportar operadores lógicos y negaciones en las condiciones de filtrado.
+    extra_exercises_en:
+    - Implement a real-time filtering system for streaming data.
+    - Support logical operators and negations in filtering conditions.
+  - id: ordenar-datos
+    name_es: Ordenar datos
+    name_en: Sort Data
+    description_es: Dado un conjunto de datos, implementar un algoritmo de ordenamiento eficiente para organizar los datos en una orden específica.
+    description_en: Given a dataset, implement an efficient sorting algorithm to organize the data in a specific order.
+    difficulty: easy
+    tags:
+    - Ordenamiento de Datos
+    company: Meta
+    role: Data Engineering
+    use_cases_es:
+    - Organizar registros de un sistema de gestión de bases de datos por fecha o nombre.
+    - Crear una lista ordenada de productos en un catálogo en línea.
+    - Generar informes que requieren datos ordenados cronológicamente.
+    use_cases_en:
+    - Organize records in a database management system by date or name.
+    - Create an ordered list of products in an online catalog.
+    - Generate reports that require data sorted chronologically.
+    extra_exercises_es:
+    - Comparar la eficiencia de diferentes algoritmos de ordenamiento.
+    - Implementar un algoritmo de ordenamiento para datos parcialmente ordenados.
+    extra_exercises_en:
+    - Compare the efficiency of different sorting algorithms.
+    - Implement a sorting algorithm for partially sorted data.
+  - id: encontrar-k-minimos
+    name_es: Encontrar los k mínimos
+    name_en: Find k Minima
+    description_es: Dado un conjunto de números, encontrar los k números más pequeños de manera eficiente.
+    description_en: Given a set of numbers, find the k smallest numbers efficiently.
+    difficulty: medium
+    tags:
+    - Búsqueda de Mínimos
+    company: Meta
+    role: Backend
+    use_cases_es:
+    - Seleccionar los k productos con precios más bajos en una tienda en línea.
+    - Identificar los k registros con los valores más pequeños en una base de datos.
+    - Crear un sistema de recomendación que sugiera los k ítems más relevantes.
+    use_cases_en:
+    - Select the k products with the lowest prices in an online store.
+    - Identify the k records with the smallest values in a database.
+    - Create a recommendation system that suggests the k most relevant items.
+    extra_exercises_es:
+    - Implementar un algoritmo para encontrar los k máximos de manera eficiente.
+    - Soportar la búsqueda de los k mínimos en un conjunto de datos en flujo.
+    extra_exercises_en:
+    - Implement an algorithm to find the k maxima efficiently.
+    - Support finding the k minima in a streaming dataset.
