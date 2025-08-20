@@ -1,8 +1,8 @@
 <div class="container">
     <div>
-        <h1><%= problem.title %></h1>
+        <h1><%= (problem.title_en || problem.name_en) %></h1>
         <p><%= problem.shortDescription %></p>
-        <p><%= problem.fullExplanation %></p>
+        <p><%= (problem.fullExplanation || problem.description_en ) %></p>
     </div>
     <div>
         <h2>Solution</h2>

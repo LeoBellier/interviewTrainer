@@ -6,13 +6,13 @@
 
   <!-- grid de tarjetas -->
   <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <% (problems || []).forEach(function(problem) { %>
+    <% (questions || []).forEach(function(problem) { %>
       <li>
         <a href="/problem/<%= encodeURIComponent(problem.id) %>"
            class="block rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition
                   hover:shadow-md hover:border-gray-300">
           <h3 class="text-lg font-medium text-gray-900">
-            <%= problem.title %>
+            <%= problem.title_en %>
           </h3>
 
           <% if (problem.shortDescription) { %>
